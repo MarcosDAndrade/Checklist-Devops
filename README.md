@@ -27,14 +27,29 @@ Definir: 1 ou mais aprovadores
 
 🎯 Objetivo: Evitar reinventar roda.
 
+💡 Exercício
+Montar pipeline que: Instala dependências; Roda teste.
+
+### 🔐 5. Trabalhar com Secrets
+🎯 Objetivo
+Proteger dados sensíveis (tokens, senhas, etc.)
+
+✅ Criar secret
+
+✅ Usar no workflow
+
+### ⚠️ Importante
+Nunca dar `echo` em produção (vaza segredo nos logs)
+Usar apenas quando necessário
+
 ## Resumo do que foi criado
 |ID |Descrição | Demonstração |
 |---|-----------|-------------|
 |1- | Esse passo foi feito nas configurações do próprio github | |
 |2- | Esse passo foi feito nas configurações do próprio github | |
 |3- | Como todos os commits foram limitados a PRs,<br> decidi criar uma automação para todos os commits<br> que forem dados push,e independente da branch a action<br> faria um PR automaticamente com o titulo do commit em questão.| [Workflow PR Automático](https://github.com/MarcosDAndrade/Checklist-Devops/blob/main/.github/workflows/pipeline-pr-automatico.yml)|
-|4- | 
-
+|4- | Foi criado um workflow que busca um repositório existente, instala <br>as dependências para teste, executa o arquivo java e exibe o print da mensagem |[Workflow de execução](https://github.com/MarcosDAndrade/Checklist-Devops/actions/workflows/pipeline-run-java.yml)|
+|5- | Foi criado um workflow que lê a chave secret e exibe ela através do<br> comando 'echo' |  |
 
 ## Prints
 * Demonstação bloqueio de merge
@@ -46,4 +61,6 @@ Definir: 1 ou mais aprovadores
 
 <img width="912" height="386" alt="image" src="https://github.com/user-attachments/assets/c44b65ae-41f3-4766-9828-c693dccd73f1" />
 
+* Demonstração de execução de arquivo
+[Id de exemplo: 80384132051](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27223443022/job/80384132051)
 
