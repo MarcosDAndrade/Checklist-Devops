@@ -22,3 +22,4 @@ Garantir que ninguém faça push direto — tudo deve passar por PR.
 
 <img width="912" height="386" alt="image" src="https://github.com/user-attachments/assets/c44b65ae-41f3-4766-9828-c693dccd73f1" />
 
+<img width="934" height="409" alt="image" src="https://github.com/user-attachments/assets/fedfb909-0545-4f4d-b283-ca5835636842" />
