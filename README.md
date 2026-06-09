@@ -49,7 +49,7 @@ Usar apenas quando necessário
 |2- | Esse passo foi feito nas configurações do próprio github | |
 |3- | Como todos os commits foram limitados a PRs,<br> decidi criar uma automação para todos os commits<br> que forem dados push,e independente da branch a action<br> faria um PR automaticamente com o titulo do commit em questão.| [Workflow PR Automático](https://github.com/MarcosDAndrade/Checklist-Devops/blob/main/.github/workflows/pipeline-pr-automatico.yml)|
 |4- | Foi criado um workflow que busca um repositório existente, instala <br>as dependências para teste, executa o arquivo java e exibe o print da mensagem |[Workflow de execução](https://github.com/MarcosDAndrade/Checklist-Devops/actions/workflows/pipeline-run-java.yml)|
-|5- | Foi criado um workflow que lê a chave secret e exibe ela através do<br> comando 'echo' |  |
+|5- | Foi criado um workflow que lê a chave secret e exibe ela através do<br> comando 'echo' | [Usar secret key](https://github.com/MarcosDAndrade/Checklist-Devops/actions/workflows/pipeline-secrets.yml) |
 
 ## Prints
 * Demonstação bloqueio de merge
