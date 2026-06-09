@@ -20,4 +20,5 @@ Garantir que ninguém faça push direto — tudo deve passar por PR.
 
 [Id de exemplo: 27221804242](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27221804242)
 
+<img width="912" height="386" alt="image" src="https://github.com/user-attachments/assets/c44b65ae-41f3-4766-9828-c693dccd73f1" />
 
