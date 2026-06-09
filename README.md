@@ -1,29 +1,31 @@
 # Checklist-Devops
 
-✅ Checklist DevOps – GitHub Actions (Iniciante)
+### ✅ Checklist DevOps – GitHub Actions (Iniciante)
 
-🔒 1. Bloquear commits diretos na `main`
+### 🔒 1. Bloquear commits diretos na `main`
 
 🎯 Objetivo
 Garantir que ninguém faça push direto — tudo deve passar por PR.
 
-🔁 2. Exigir aprovação de PR para merge
+### 🔁 2. Exigir aprovação de PR para merge
+
 🎯 Objetivo
 Implementar fluxo correto de revisão.
+
 ✅ O que fazer
 Já dentro da rule criada:
-✅ Require pull request reviews before merging
-Definir:
-1 ou mais aprovadores
 
-⚙️ 3. Criar e usar GitHub Actions
-🎯 Objetivo
-Criar pipelines automáticos.
+🚫 Require pull request reviews before merging
 
-♻️ 4. Reaproveitar Actions do marketplace
-🎯 Objetivo
-Evitar reinventar roda.
+Definir: 1 ou mais aprovadores
 
+### ⚙️ 3. Criar e usar GitHub Actions
+
+🎯 Objetivo: Criar pipelines automáticos.
+
+### ♻️ 4. Reaproveitar Actions do marketplace
+
+🎯 Objetivo: Evitar reinventar roda.
 
 ## Resumo do que foi criado
 |ID |Descrição | Demonstração |
