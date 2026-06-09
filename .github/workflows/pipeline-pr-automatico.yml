@@ -1,0 +1,35 @@
+name: Pull Request automatico
+
+on:
+  push:
+    branches:
+        - "**"
+    paths:
+      - '.github/workflows/**'
+      
+permissions:
+  contents: write
+  pull-requests: write
+
+
+jobs:
+    criar-pr-automatico:
+        if: github.ref != 'refs/heads/main'
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+
+        - name: Criar pull request
+          run: |
+            gh pr create \
+            --title "${{ github.event.head_commit.message }}" \
+            --body "PR automático criado pelo workflow" \
+            --base main \
+            --head "${{ github.ref_name }}"
+            
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
