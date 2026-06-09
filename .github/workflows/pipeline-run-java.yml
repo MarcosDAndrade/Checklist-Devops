@@ -1,0 +1,34 @@
+name: Hello World Java
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+    Hello-World:
+        runs-on: ubuntu-latest
+    
+        steps:
+        - name: baixar repositório atual
+          uses: actions/checkout@v4
+        
+        - name: baixar repositório java
+          uses: actions/checkout@v4
+          with:
+            repository: MarcosDAndrade/CodigosApoio
+            path: codigoTeste
+
+        - name: Instalar Java
+          uses: actions/setup-java@v4
+          with:
+              distribution: temurin
+              java-version: '17'
+
+        - name: Compilar e executar
+          run: |
+           cd codigoTeste/HelloWorld
+           echo "=== INICIO EXECUÇÃO ==="
+           mvn compile 
+           mvn exec:java -Dexec.mainClass="com.exemplo.Main"
+           echo "=== FIM EXECUÇÃO ==="
