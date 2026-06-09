@@ -3,6 +3,7 @@ name: Aprovar PRs de branches confiáveis automaticamente
 on: 
   pull_request:
     types: [opened]
+  workflow_dispatch: 
 
 env:
     BRANCH: update
