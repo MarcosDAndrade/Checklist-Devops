@@ -55,12 +55,13 @@ Usar apenas quando necessário
 * Demonstação bloqueio de merge
   <img width="934" height="409" alt="image" src="https://github.com/user-attachments/assets/fedfb909-0545-4f4d-b283-ca5835636842" />
   
-* Demonstração automação de PR
-  
+* Demonstração automação de PR: 
 [Id de exemplo: 27221804242](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27221804242)
 
 <img width="912" height="386" alt="image" src="https://github.com/user-attachments/assets/c44b65ae-41f3-4766-9828-c693dccd73f1" />
 
-* Demonstração de execução de arquivo
+* Demonstração de execução de arquivo:
 [Id de exemplo: 80384132051](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27223443022/job/80384132051)
+<img width="1080" height="454" alt="image" src="https://github.com/user-attachments/assets/7673f7de-2f77-43c8-8b7d-075961c21363" />
+
 
