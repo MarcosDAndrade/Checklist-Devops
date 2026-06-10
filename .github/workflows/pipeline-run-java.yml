@@ -28,7 +28,7 @@ jobs:
            cd codigoTeste/HelloWorld
            echo "=== INICIO EXECUÇÃO ==="
            mvn compile 
-           mvn exec:java -Dexec.mainClass="com.exemplo.Main" | tee java.txt
+           mvn -q exec:java -Dexec.mainClass="com.exemplo.Main" | tee java.txt
            echo "=== FIM EXECUÇÃO ==="
 
 
