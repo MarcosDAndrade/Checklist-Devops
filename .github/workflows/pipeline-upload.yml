@@ -1,0 +1,22 @@
+name: Upload de arquivos
+
+on: 
+  workflow_dispatch:
+
+jobs: 
+    criar-arquivo:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Checkout do código
+            uses: actions/checkout@v4
+
+          - name: Gerar arquivo de exemplo
+            run: |
+              echo "Hello, artifact" > artifact.txt
+          
+          - name: Upload do artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: meu-artifact
+              path: artifact.txt
