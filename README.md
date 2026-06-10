@@ -74,6 +74,6 @@ Usar apenas quando necessário
 * Demonstração upload arquivos:
   
   [Id de exemplo: 27276651843](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27276651843)
-<img width="1885" height="801" alt="Captura de tela 2026-06-10 094905" src="https://github.com/user-attachments/assets/9b958bd8-b442-4a54-8116-4ef3f1560125" />
+  <img width="1880" height="842" alt="image" src="https://github.com/user-attachments/assets/a77c1097-d19b-4349-ae59-4a34d78239b3" />
 
 
