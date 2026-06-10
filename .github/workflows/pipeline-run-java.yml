@@ -36,4 +36,4 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
             name: Resultado-Java
-            path: java.txt
+            path: codigoTeste/HelloWorld/java.txt
