@@ -28,5 +28,12 @@ jobs:
            cd codigoTeste/HelloWorld
            echo "=== INICIO EXECUÇÃO ==="
            mvn compile 
-           mvn exec:java -Dexec.mainClass="com.exemplo.Main"
+           mvn exec:java -Dexec.mainClass="com.exemplo.Main" | tee java.txt
            echo "=== FIM EXECUÇÃO ==="
+
+
+        - name: Upload do resultado
+          uses: actions/upload-artifact@v4
+          with:
+            name: Resultado-Java
+            path: java.txt
