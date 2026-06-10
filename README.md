@@ -31,7 +31,7 @@ Definir: 1 ou mais aprovadores
 Montar pipeline que: Instala dependências; Roda teste.
 
 ### 🔐 5. Trabalhar com Secrets
-🎯 Objetivo
+🎯 Objetivo:
 Proteger dados sensíveis (tokens, senhas, etc.)
 
 ✅ Criar secret
@@ -41,6 +41,10 @@ Proteger dados sensíveis (tokens, senhas, etc.)
 ### ⚠️ Importante
 Nunca dar `echo` em produção (vaza segredo nos logs)
 Usar apenas quando necessário
+
+### 📦 6. Upload de arquivos (Artifacts)
+🎯 Objetivo: Salvar resultados do build/testes
+
 
 ## Resumo do que foi criado
 |ID |Descrição | Demonstração |
