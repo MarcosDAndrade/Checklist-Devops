@@ -45,6 +45,14 @@ Usar apenas quando necessário
 ### 📦 6. Upload de arquivos (Artifacts)
 🎯 Objetivo: Salvar resultados do build/testes
 
+### 7. Desafio final (combinar tudo)
+🎯 Objetivos:
+✅ Rodar em PR
+✅ Bloquear merge se pipeline falhar
+✅ Usar pelo menos 1 action do marketplace
+✅ Usar 1 secret
+✅ Gerar e subir artifact
+
 
 ## Resumo do que foi criado
 |ID |Descrição | Demonstração |
