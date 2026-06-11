@@ -31,7 +31,7 @@ jobs:
 
       - name: Compilar e executar
         run: |
-           cd RepositorioJava/helloWorld
+           cd RepositorioJava/HelloWorld
            echo "Compilando programa"
            mvn compile
            mvn -q exec:java -Dexec.mainClass="com.exemplo.Main" | tee $ARQUIVODETEXTO
@@ -39,13 +39,13 @@ jobs:
 
       - name: Imprimir o conteúdo Java
         run: |
-          cd RepositorioJava/helloWorld
+          cd RepositorioJava/HelloWorld
           cat $ARQUIVODETEXTO
 
       - name: Fazer upload do arquivo de texto
         uses: actions/upload-artifact@v4
         with:
-          path: RepositorioJava/helloWorld/$ARQUIVODETEXTO
+          path: RepositorioJava/HelloWorld/$ARQUIVODETEXTO
 
     Exibir_variaveis:
       runs-on: ubuntu-latest
