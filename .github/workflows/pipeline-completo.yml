@@ -1,0 +1,64 @@
+name: Jobs simultâneos
+
+on:
+  workflow_dispatch:
+
+jobs:
+    Executar_codigo:
+      runs-on: ubuntu-latest
+
+      
+      env:
+            ARQUIVODETEXTO: java.txt
+        
+      steps:
+      - name: Checkout Código
+        uses: actions/checkout@v4
+
+      - name: Baixar repositório 
+        uses: actions/checkout@v4
+        with: 
+            repository: MarcosDAndrade/CodigosApoio
+            path: RepositorioJava
+        
+
+      - name: Instalar Java 17
+        uses: actions/setup-java@v4
+        with:
+            distribution: temurin
+            java-version: '17'
+
+
+      - name: Compilar e executar
+        working-directory: codigoteste/helloWorld
+        run: |
+           echo "Compilando programa"
+           mvn compile
+           mvn -q exec:java -Dexec.mainClass="com.exemplo.Main" | tee $ARQUIVODETEXTO
+           echo "Execução foi salva no arquivo $ARQUIVODETEXTO"
+
+      - name: Imprimir o conteúdo Java
+        working-directory: codigoteste/helloWorld
+        run: |
+          cat $ARQUIVODETEXTO
+
+      - name: Fazer upload do arquivo de texto
+        uses: actions/upload-artifact@v4
+        with:
+          path: codigoTeste/helloWorld/$ARQUIVODETEXTO
+
+    Exibir_variaveis:
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Exibir valor da variável
+        run: |
+           echo "Exibir variável de ambiente: ${{vars.ENVIRONMENT}}"
+           echo "Exibir propósito do Job: ${{vars.PURPOSE}}"
+
+      - name: Exibir Secret
+        run: |
+          echo "Valor da secret: ${{vars.API_KEY_SECRET}}"
