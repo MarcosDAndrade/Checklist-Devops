@@ -30,16 +30,16 @@ jobs:
 
 
       - name: Compilar e executar
-        working-directory: codigoteste/helloWorld
         run: |
+           cd codigoTeste/helloWorld
            echo "Compilando programa"
            mvn compile
            mvn -q exec:java -Dexec.mainClass="com.exemplo.Main" | tee $ARQUIVODETEXTO
            echo "Execução foi salva no arquivo $ARQUIVODETEXTO"
 
       - name: Imprimir o conteúdo Java
-        working-directory: codigoteste/helloWorld
         run: |
+          cd codigoTeste/helloWorld
           cat $ARQUIVODETEXTO
 
       - name: Fazer upload do arquivo de texto
