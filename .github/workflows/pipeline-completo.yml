@@ -61,4 +61,4 @@ jobs:
 
       - name: Exibir Secret
         run: |
-          echo "Valor da secret: ${{vars.API_SECRET_KEY}}"
+          echo "Valor da secret: ${{secrets.API_SECRET_KEY}}"
