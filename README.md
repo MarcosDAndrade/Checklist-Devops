@@ -47,10 +47,15 @@ Usar apenas quando necessário
 
 ### 7. Desafio final (combinar tudo)
 🎯 Objetivos:
+
 ✅ Rodar em PR
+
 ✅ Bloquear merge se pipeline falhar
+
 ✅ Usar pelo menos 1 action do marketplace
+
 ✅ Usar 1 secret
+
 ✅ Gerar e subir artifact
 
 
@@ -86,6 +91,7 @@ Usar apenas quando necessário
   <img width="1880" height="842" alt="image" src="https://github.com/user-attachments/assets/a77c1097-d19b-4349-ae59-4a34d78239b3" />
   
 * Demonstração Jobs Paralelos:
+  
   [Id de exemplo: 27366044615](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27366044615)
   <img width="1149" height="514" alt="image" src="https://github.com/user-attachments/assets/bc954a6e-54aa-43ff-b82c-600d5667e401" />
 
