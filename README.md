@@ -87,5 +87,7 @@ Usar apenas quando necessário
   
 * Demonstração Jobs Paralelos:
   [Id de exemplo: 27366044615](https://github.com/MarcosDAndrade/Checklist-Devops/actions/runs/27366044615)
+  <img width="1149" height="514" alt="image" src="https://github.com/user-attachments/assets/bc954a6e-54aa-43ff-b82c-600d5667e401" />
+
   
 
